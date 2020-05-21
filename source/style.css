@@ -160,6 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 #sidebar {
   display: flex;
   z-index: 1000;
+  transition-duration: 0.2s;
   left: 0;
   position: fixed;
   overflow-y: scroll;
@@ -189,6 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 7px;
 }
 #sidebar .sidebar-content a {
+  cursor: pointer;
   font-size: 14px;
   display: inline-block;
   word-break: break-word;
@@ -200,6 +202,22 @@ h1, h2, h3, h4, h5, h6 {
 #sidebar .sidebar-content a:hover {
   text-decoration: none;
   background-color: #e6ecf1;
+}
+
+#my_input {
+  background-color: #f5f7f9;
+  margin-left: 7px;
+  width: 120px;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding-bottom: 0px;
+  word-break: break-word;
+  font-family: Content-font, Roboto, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #3b454e;
 }
 
 main {
@@ -299,6 +317,58 @@ main .content-title-little h2 {
 .tips .tips-content ul li a:hover {
   text-decoration: none;
   color: #3884ff;
+}
+
+.fa-plus {
+  display: none;
+  margin-left: 10px;
+}
+
+.sidebar-items li:hover .fa-plus {
+  color: #3884ff;
+  display: inline;
+}
+
+.sidebar-items li:hover .fa-plus:hover {
+  color: #9daab6;
+}
+
+.fa-trash-alt {
+  display: none;
+  margin-left: 10px;
+}
+
+.sidebar-items li:hover .fa-trash-alt {
+  color: #3884ff;
+  display: inline;
+}
+
+.sidebar-items li:hover .fa-trash-alt:hover {
+  color: #9daab6;
+}
+
+.fa-edit {
+  display: none;
+  margin-left: 10px;
+}
+
+.sidebar-items li:hover .fa-edit {
+  color: #3884ff;
+  display: inline;
+}
+
+.sidebar-items li:hover .fa-edit:hover {
+  color: #9daab6;
+}
+
+.fa-check {
+  color: #3884ff;
+  display: inline;
+  margin-left: 10px;
+}
+
+.fa-check:hover {
+  color: #9daab6;
 }
 
 .menu {
@@ -414,4 +484,24 @@ main .content-title-little h2 {
   .menu {
     top: 107px;
   }
+}
+#panel {
+  overflow: hidden;
+  transition-duration: 0.5s;
+  border-left: 1px solid #9daab6;
+  padding-left: 20px;
+}
+#panel a {
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+  word-break: break-word;
+  font-family: Content-font, Roboto, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #3b454e;
+}
+#panel a:hover {
+  text-decoration: none;
+  background-color: #e6ecf1;
 }

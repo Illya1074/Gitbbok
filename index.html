@@ -13,7 +13,8 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"> -->
     <link data-react-helmet="true" rel="icon" href="https://d1j8pt39hxlh3d.cloudfront.net/emoji/emojione/5.0/png/unicode/32/1f4d6.png">
     <script src="js/script.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="js/jquery.js"></script>
    
 </head>
 <body onload="myAdoptive()">
@@ -63,23 +64,50 @@
     </header>
 
 
+
     <div id="sidebar">
-        <div class="sidebar-space">
-        </div>
+        
         
         <div class="sidebar-content" id="sidebar_content">
             <ul class="sidebar-items">
-                <li><a href="">What is a GitBook</a></li>
+            
+                <li><a class="flip-1" onclick="myTree('panel-1')"><span>What is a GitBook</span><i class="fas fa-plus" onclick="Panel_Generate('panel-1')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-1')"></i><i class="fas fa-edit" onclick="myInput_create('flip-1')"></i></a></li>
+                <li id="panel" class="panel-1" style="display: block;"> </li>
+
                 <li class="sidebar_items__title"><span>📌Getting started</span></li>
-                <li><a href="">Start exploring</a></li>
-                <li><a href="">Quick start</a></li>
+                
+                <li><a class="flip-1" onclick="myTree('panel-2')"><span>What is a GitBook</span><i class="fas fa-plus" onclick="Panel_Generate('panel-2')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-2')"></i><i class="fas fa-edit" onclick="myInput_create('flip-2')"></i></a></li>
+                <li id="panel" class="panel-1" style="display: block;"> </li>
+
+                <li><a class="flip-1" onclick="myTree('panel-3')"><span>What is a GitBook</span><i class="fas fa-plus" onclick="Panel_Generate('panel-3')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-3')"></i><i class="fas fa-edit" onclick="myInput_create('flip-3')"></i></a></li>
+                <li id="panel" class="panel-1" style="display: block;"> </li>
+
+                <li><a class="flip-1" onclick="myTree('panel-4')"><span>What is a GitBook</span><i class="fas fa-plus" onclick="Panel_Generate('panel-4')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-4')"></i><i class="fas fa-edit" onclick="myInput_create('flip-4')"></i></a></li>
+                <li id="panel" class="panel-1" style="display: block;"> </li>
+             
                 <li class="sidebar_items__title"><span>🌌Spaces</span></li>
-                <li><a href="">What is a space?</a></li>
-                <li><a href="">Space visibility</a></li>
-                <li><a href="">Analytics</a></li>
-                <li><a href="">Space settings</a></li>
+                
+                <li><a class="flip-1" onclick="myTree('panel-5')"><span>What is a GitBook</span><i class="fas fa-plus" onclick="Panel_Generate('panel-5')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-5')"></i><i class="fas fa-edit" onclick="myInput_create('flip-5')"></i></a></li>
+                <li id="panel" class="panel-1" style="display: block;"> </li>
+
+                <li><a class="flip-1" onclick="myTree('panel-6')"><span>What is a GitBook</span><i class="fas fa-plus" onclick="Panel_Generate('panel-6')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-6')"></i><i class="fas fa-edit" onclick="myInput_create('flip-6')"></i></a></li>
+                <li id="panel" class="panel-1" style="display: block;"> </li>
+
+                <li><a class="flip-1" onclick="myTree('panel-7')"><span>What is a GitBook</span><i class="fas fa-plus" onclick="Panel_Generate('panel-7')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-7')"></i><i class="fas fa-edit" onclick="myInput_create('flip-7')"></i></a></li>
+                <li id="panel" class="panel-1" style="display: block;"> </li>
+
+                <li><a class="flip-1" onclick="myTree('panel-8')"><span>What is a GitBook</span><i class="fas fa-plus" onclick="Panel_Generate('panel-8')"></i><i class="fas fa-trash-alt" onclick="Panel_Delete('flip-8')"></i><i class="fas fa-edit" onclick="myInput_create('flip-8')"></i></a></li>
+                <li id="panel" class="panel-1" style="display: block;"> </li>
+
+
+
                 <li class="sidebar_items__title"><span>🏢Organizations</span></li>
-                <li><a href="">What is an organization?</a></li>
+                <li id="flip" ><a>What is an organization? ></a></li>
+                <li id="panel" style="display: none;" class="panel">
+                    <a id="flip" class="flip" >With command palette ></a>
+                    
+                    <a>With insert palette</a>
+                </li>
                 <li><a href="">Create an organization</a></li>
                 <li><a href="">Organization settings</a></li>
                 <li><a href="">Billing settings</a></li>
@@ -95,36 +123,6 @@
                 <li><a href="">Variants</a></li>
                 <li><a href="">Embeds</a></li>
                 <li class="sidebar_items__title"><span>🤝Collaboration</span></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li class="sidebar_items__title"><span>✨Features</span></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li class="sidebar_items__title"><span>🔧Integrations</span></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li class="sidebar_items__title"><span>💵Pricing</span></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li class="sidebar_items__title"><span>📡Hosting</span></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li><a href="">What is a GitBook</a></li>
-                <li class="sidebar_items__title"><span>🤓Resources</span></li>
-                <li><a href="">What is a GitBook</a></li>
                 <li><a href="">What is a GitBook</a></li>
                 <li><a href="">What is a GitBook</a></li>
                 <li><a href="">What is a GitBook</a></li>
@@ -153,9 +151,10 @@
     <main>
         <div class="content">
             <div class="content-tittle">
-                <h1>Start exploring</h1>
+                <h1 class="asd" onclick="Name_Generate()">Start exploring</h1>
             </div>
             <br>
+            
             <section>
                 <div class="content-text">
                     <span>Do you think GitBook is the right fit for you and your needs?
